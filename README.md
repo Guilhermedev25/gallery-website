@@ -1,101 +1,66 @@
-# Gallery Website
+# Gallery Website 🌟
 
-Um site de galeria responsivo com menu hamburger para dispositivos móveis.
+Hi there! This is my first responsive gallery website project. I'm learning web development and decided to create a photo gallery with a cool hamburger menu for mobile devices.
 
-## 📁 Estrutura do Projeto
+## What I Built 📸
+
+A simple but beautiful photo gallery website that works great on both desktop and mobile phones. It has:
+
+- **Responsive design** - looks good on any screen size
+- **Hamburger menu** - cool mobile menu that slides in from the side
+- **Photo categories** - 9 different photo categories to explore
+- **Hover effects** - photos change when you hover over them
+- **Smooth animations** - everything moves smoothly
+
+## Technologies I Used 🛠️
+
+- HTML5
+- CSS3 (with SASS)
+- JavaScript
+- Font Awesome icons
+
+## How to Use 🚀
+
+1. Download or clone this project
+2. Open `index.html` in your web browser
+3. Try resizing the window to see the responsive design
+4. On mobile, click the hamburger menu (☰) to see the navigation
+
+## Project Structure 📁
 
 ```
-galery/
-├── index.html          # Página principal
-├── css/
-│   ├── style.css       # CSS compilado
-│   └── style.css.map   # Source map do SASS
-├── sass/
-│   ├── style.sass      # Arquivo principal SASS
-│   ├── _variables.sass # Variáveis SASS
-│   └── _mixins.sass    # Mixins SASS
-├── js/
-│   └── main.js         # JavaScript principal
-└── img/                # Imagens da galeria
-    ├── animais.jpg
-    ├── arquitetura.jpg
-    ├── cidade.jpg
-    ├── decoracao.jpg
-    ├── esportes.jpg
-    ├── natureza.jpg
-    ├── paisagem.jpg
-    ├── pessoas.jpg
-    └── refeicoes.jpg
+gallery-website/
+├── index.html          # Main page
+├── css/                # Styles
+├── sass/               # SASS files
+├── js/                 # JavaScript
+└── img/                # Gallery images
 ```
 
-## 🚀 Funcionalidades
+## Features ✨
 
-### Menu Hamburger
+- **Mobile-first design**
+- **Smooth hamburger menu animation**
+- **Photo gallery with hover effects**
+- **Responsive grid layout**
+- **Clean and modern design**
 
-- **Responsivo**: Aparece apenas em telas ≤ 425px
-- **Animação**: Transformação suave em X
-- **Overlay**: Menu full-screen com fundo escuro
-- **Auto-close**: Fecha ao clicar nos links ou fora do menu
+## What I Learned 📚
 
-### Galeria
+- How to create responsive websites
+- Working with SASS and CSS
+- JavaScript event handling
+- Mobile menu development
+- CSS animations and transitions
 
-- **Grid responsivo**: 3 colunas no desktop, 1 coluna no mobile
-- **Efeitos hover**: Zoom e remoção do filtro grayscale
-- **Categorias**: 9 categorias diferentes de fotos
+## Future Ideas 💡
 
-## 🛠️ Tecnologias
+- Add a photo lightbox
+- Create category filters
+- Add a search function
+- Include more photo categories
+- Add a contact form
 
-- **HTML5**: Estrutura semântica
-- **SASS**: Pré-processador CSS com variáveis e mixins
-- **CSS3**: Flexbox, Grid, animações e media queries
-- **JavaScript**: Interatividade do menu hamburger
-- **Font Awesome**: Ícones de redes sociais
+---
 
-## 📱 Responsividade
-
-- **Desktop**: > 425px - Menu horizontal
-- **Mobile**: ≤ 425px - Menu hamburger
-
-## 🎨 Cores
-
-- **Primária**: #FFF (Branco)
-- **Secundária**: #20C997 (Verde)
-- **Fundo**: #000 (Preto)
-- **Texto**: #777 (Cinza)
-
-## 🔧 Como Usar
-
-1. Clone o repositório
-2. Abra `index.html` no navegador
-3. Para desenvolvimento, edite os arquivos SASS e compile com:
-   ```bash
-   sass sass/style.sass css/style.css
-   ```
-
-## 📝 Organização do Código
-
-### SASS
-
-- **Variáveis**: Cores, tamanhos e breakpoints
-- **Mixins**: Reutilização de código CSS
-- **Estrutura**: Organizado por seções com comentários
-
-### JavaScript
-
-- **Modular**: Código organizado em funções
-- **Eventos**: Listeners para interatividade
-- **Comentários**: Documentação em português
-
-### HTML
-
-- **Semântico**: Uso correto de tags HTML5
-- **Acessível**: Estrutura clara e navegável
-- **Organizado**: Seções bem definidas
-
-## 🎯 Melhorias Futuras
-
-- [ ] Adicionar lazy loading para imagens
-- [ ] Implementar filtros de categoria
-- [ ] Adicionar lightbox para visualização de fotos
-- [ ] Implementar sistema de busca
-- [ ] Adicionar animações de scroll
+_This is one of my first web development projects. I'm excited to keep learning and improving! Feel free to give feedback or suggestions._ 😊
