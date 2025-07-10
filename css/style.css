@@ -1,0 +1,356 @@
+* {
+  font-family: "Josefin Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 425px) {
+  .header {
+    padding: 1.1rem;
+  }
+}
+.header-brand {
+  color: #FFF;
+  font-size: 3rem;
+}
+.header .hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 5px;
+  position: relative;
+}
+@media (max-width: 425px) {
+  .header .hamburger-menu {
+    display: flex;
+  }
+}
+.header .hamburger-menu .hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 3px 0;
+  transition: 0.3s ease;
+  border-radius: 2px;
+}
+.header .hamburger-menu.active .hamburger-line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.header .hamburger-menu.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.header .hamburger-menu.active .hamburger-line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.header .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 999;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+@media (max-width: 425px) {
+  .header .mobile-menu {
+    display: flex;
+  }
+}
+.header .mobile-menu.active {
+  transform: translateX(0);
+}
+.header .mobile-menu .header-navbar {
+  margin-bottom: 2rem;
+}
+.header .mobile-menu .header-navbar ul {
+  flex-direction: column;
+  display: flex !important;
+}
+.header .mobile-menu .header-navbar ul li {
+  margin: 1rem 0;
+  text-align: center;
+}
+.header .mobile-menu .header-navbar ul li a {
+  font-size: 1.2rem;
+  color: #FFF;
+}
+.header .mobile-menu .header-navbar ul li a:hover {
+  color: #20C997;
+}
+.header .mobile-menu .header-social-media ul {
+  display: flex !important;
+  flex-direction: row;
+}
+.header .mobile-menu .header-social-media ul li {
+  margin: 0 1rem;
+}
+.header .mobile-menu .header-social-media ul li a {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+.header .mobile-menu .header-social-media ul li a:hover {
+  color: #20C997;
+}
+.header .desktop-nav {
+  display: flex;
+}
+@media (max-width: 425px) {
+  .header .desktop-nav {
+    display: none;
+  }
+}
+.header .desktop-social {
+  display: flex;
+}
+@media (max-width: 425px) {
+  .header .desktop-social {
+    display: none;
+  }
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 425px) {
+  .header-navbar ul {
+    display: none;
+  }
+}
+.header-navbar ul li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar ul li .active {
+  color: #20C997;
+}
+.header-navbar ul li a:hover {
+  color: #20C997;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+@media (max-width: 425px) {
+  .header-social-media ul {
+    display: none;
+  }
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+}
+.header-social-media ul li a:hover {
+  color: #FFF;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+@media (max-width: 425px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  width: 31%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #FFF;
+}
+@media (max-width: 425px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 6%;
+  }
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  padding: 0.6rem 2rem;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gallery-card-btn:hover {
+  background-color: #FFF;
+  color: #000;
+}
+.gallery #card-1 {
+  background-image: url("../img/animais.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/animais.jpg");
+}
+.gallery #card-2 {
+  background-image: url("../img/arquitetura.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/arquitetura.jpg");
+}
+.gallery #card-3 {
+  background-image: url("../img/cidade.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cidade.jpg");
+}
+.gallery #card-4 {
+  background-image: url("../img/decoracao.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/decoracao.jpg");
+}
+.gallery #card-5 {
+  background-image: url("../img/esportes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/esportes.jpg");
+}
+.gallery #card-6 {
+  background-image: url("../img/natureza.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/natureza.jpg");
+}
+.gallery #card-7 {
+  background-image: url("../img/paisagem.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paisagem.jpg");
+}
+.gallery #card-8 {
+  background-image: url("../img/pessoas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pessoas.jpg");
+}
+.gallery #card-9 {
+  background-image: url("../img/refeicoes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/refeicoes.jpg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #20C997;
+}
+
+/*# sourceMappingURL=style.css.map */
