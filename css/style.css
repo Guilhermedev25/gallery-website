@@ -27,7 +27,7 @@ body ul {
   margin: 0 auto;
   position: relative;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header {
     padding: 1.1rem;
   }
@@ -44,7 +44,7 @@ body ul {
   padding: 5px;
   position: relative;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header .hamburger-menu {
     display: flex;
   }
@@ -81,7 +81,7 @@ body ul {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header .mobile-menu {
     display: flex;
   }
@@ -124,7 +124,7 @@ body ul {
 .header .desktop-nav {
   display: flex;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header .desktop-nav {
     display: none;
   }
@@ -132,7 +132,7 @@ body ul {
 .header .desktop-social {
   display: flex;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header .desktop-social {
     display: none;
   }
@@ -143,7 +143,7 @@ body ul {
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header-navbar ul {
     display: none;
   }
@@ -165,7 +165,7 @@ body ul {
   justify-content: center;
   height: 100%;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .header-social-media ul {
     display: none;
   }
@@ -188,7 +188,7 @@ body ul {
   justify-content: space-between;
   padding: 0;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .gallery {
     flex-direction: column;
   }
@@ -203,7 +203,7 @@ body ul {
   flex-direction: column;
   color: #FFF;
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .gallery-card {
     width: 90%;
     margin-bottom: 6%;
